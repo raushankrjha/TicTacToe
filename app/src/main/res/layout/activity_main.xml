@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjha.tic_tac_toe.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+
+    android:weightSum="3"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorbtnBackground"
+
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="100dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorbtnBackground"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="100dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorbtnBackground"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="100dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_height="match_parent">
+
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorbtnBackground"
+            android:textSize="100dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorbtnBackground"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="100dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:backgroundTint="@color/colorbtnBackground"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="100dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+
+        android:weightSum="3"
+        android:layout_height="match_parent">
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorbtnBackground"
+            android:textSize="100dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorbtnBackground"
+            android:textSize="100dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+        <Button
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/b9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorbtnBackground"
+            android:textSize="100dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8928299189790970/7496783390"
+        android:layout_alignParentEnd="true"
+        ></com.google.android.gms.ads.AdView>
+</LinearLayout>
+
